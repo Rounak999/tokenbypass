@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    <input type="text" name="firstname" placeholder="First Name" value="{{ user['firstname'] or '' }}">
+    <input type="text" name="lastname" placeholder="Last Name" value="{{ user['lastname'] or '' }}">
+    <input type="email" name="email" placeholder="Email Address" value="{{ user['email'] or '' }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <input type="submit" value="Update Account">
+</form>
+<p><a href="/login">Log in with a different account</a></p>
+{% endblock %}
