@@ -13,6 +13,7 @@ Exploit a vulnerability where:
 
 Your goal is to **perform a cross-origin email change without the user’s consent** while they're logged in.
 
+> ⚠️ **Note:** If the exploit does not work in the latest Firefox, try using an older version of Firefox or Chrome. 
 ---
 
 ## 🚀 Run the Lab via Docker
